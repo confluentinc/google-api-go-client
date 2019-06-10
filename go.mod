@@ -1,4 +1,4 @@
-module google.golang.org/api
+module confluentinc/google-api-go-client
 
 require (
 	cloud.google.com/go v0.38.0 // indirect
