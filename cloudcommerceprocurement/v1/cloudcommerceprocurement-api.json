@@ -146,6 +146,17 @@
       },
       "id": "Approval"
     },
+    "Consumer": {
+      "description": "A consumer of an entitlement.",
+      "type": "object",
+      "properties": {
+        "project": {
+          "description": "Output only. The project using this entitlement.",
+          "type": "string"
+        }
+      },
+      "id": "Consumer"
+    },
     "Entitlement": {
       "id": "Entitlement",
       "description": "Represents a procured product of a customer.",
@@ -224,6 +235,13 @@
         "account": {
           "description": "Output only. The resource name of the account that this entitlement is based on, if any.",
           "type": "string"
+        },
+        "consumers": {
+          "description": "Output only. The consumers for this entitlement.",
+          "type": "array",
+          "items": {
+            "$ref": "Consumer"
+          }
         }
       }
     },
