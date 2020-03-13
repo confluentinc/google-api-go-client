@@ -49,8 +49,8 @@ import (
 	"strconv"
 	"strings"
 
+	gensupport "github.com/confluentinc/google-api-go-client/internal/gensupport"
 	googleapi "google.golang.org/api/googleapi"
-	gensupport "google.golang.org/api/internal/gensupport"
 	option "google.golang.org/api/option"
 	internaloption "google.golang.org/api/option/internaloption"
 	htransport "google.golang.org/api/transport/http"
